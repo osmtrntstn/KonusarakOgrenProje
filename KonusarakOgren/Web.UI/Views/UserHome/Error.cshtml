@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewData["Title"] = "Error";
+}
+<div class="row col-12 justify-content-center">
+    <ul class="nav-item">
+
+
+        <li class="nav-link">
+            <h1>Daha Önce Katıldığınız Sınava Tekrar Katılamazsınız</h1>
+            <h4>Sınav Listesine Yönlendiriliyorsunuz</h4>
+        </li>
+        
+    </ul>
+
+
+
+</div>
+<div class="row col-12 justify-content-center">
+    <span id="timer" style="width:100px;height:100px; border:2px solid; border-radius:50px;font-size:50pt;text-align:center">5</span>
+
+</div>
+@section Scripts{
+
+    <script>
+        var timer = 5;
+        $(document).ready(function () {
+            $("#timer").html(timer);
+            //setInterval(GoBack, 1000);
+            GoBack();
+        });
+
+        async function GoBack() {
+            for (var i = 0; i < 5; i++) {
+                $("#timer").html(timer);
+                timer = timer - 1;
+                await delay(1000);
+            }
+                window.location = "/UserHome/Index";
+           
+        }
+        function delay(time) {
+            return new Promise(resolve => setTimeout(resolve, time));
+        }
+
+    </script>
+}

@@ -1,0 +1,54 @@
+﻿@model Entities.Concrete.User
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="~/css/login.css?@(DateTime.Now.Ticks)" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h4>Kullanıcı Kayıt</h4>
+            <form asp-action="CreateUser">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="user">
+                    <div class="form-group">
+                        <input asp-for="Name" class="form-control" placeholder="Adınız" autocomplete="off" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input asp-for="UserName" class="form-control" placeholder="Kullanıcı Adı"  autocomplete="off"/>
+                        <span asp-validation-for="UserName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" asp-for="Password" class="form-control" placeholder="Şifreniz" autocomplete="off" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input asp-for="Email" class="form-control" placeholder="Mail Adresiniz" autocomplete="off"/>
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <button class="btn">Kayıt Ol</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Entities.Dtos.ExamDtos.ExamListDto>
+
+@{
+    ViewData["Title"] = "ExamList";
+}
+
+<h3>Sınav Listesi</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ExamId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ExamTitle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr id="tr_@item.ExamId">
+                <td>
+                    @Html.DisplayFor(modelItem => item.ExamId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ExamTitle)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreatedDate)
+                </td>
+                <td>
+                    <a class="btn btn-danger btn-sm" href="javascript:DeleteExam(@item.ExamId)" onclick="return confirm('Sınavı Silmek İstediğinize Emin Misiniz?');">Sil</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@section Scripts{
+    <script src="~/js/adminHome.js?@(DateTime.Now.Ticks)"></script>
+}

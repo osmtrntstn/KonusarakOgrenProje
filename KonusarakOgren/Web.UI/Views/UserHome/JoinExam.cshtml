@@ -1,0 +1,82 @@
+﻿@model Entities.Concrete.Exam
+<h2>@Model.WiredText.Title</h2>
+<div class="row" style="border:2px solid;border-radius:10px">
+    <div style="margin:10px">
+        @Html.Raw(@Model.WiredText.Text)
+
+    </div>
+</div>
+@section styles{
+    <link href="~/css/adminHome.css?@(DateTime.Now.Ticks)" rel="stylesheet" />
+}
+
+<form asp-action="JoinExam" asp-controller="UserHome"
+      data-ajax="true"
+      data-ajax-method="POST"
+      data-ajax-begin="formBegin"
+      data-ajax-success="examSuccess"
+      data-ajax-failure="formError">
+    <input name="ExamId" type="hidden" value="@Model.Id" />
+    <div class="row col-12 justify-content-center">
+        @for (int i = 0; i < 4; i++)
+        {
+            var item = Model.ExamQuestions.ToList()[i];
+
+
+
+
+            <div class="row col-12 my-2 question-line">
+                <div class="row col-12 my-1">
+                    <div class="col-12 p-1 question alt">
+                        <div class="input-group">
+                            <label style="width:10%">Soru @(i+1)</label>
+                            <label>@item.Question</label>
+                        </div>
+
+                    </div>
+                </div>
+                <input type="hidden" name="UserExamOptions[@i].ExamQuestionOptionId" id="Answer_@item.Id" />
+                <input hidden value="@item.Id" name="UserExamOptions[@i].ExamQuestionId" />
+
+
+                <div class="row col-12 justify-content-center">
+                    @{
+                        var examQuestionOptions = item.ExamQuestionOptions.ToList();
+                        int counter = 0;
+                    }
+                    @foreach (var examQuestionOption in examQuestionOptions)
+                    {
+                        string className = "answer-" + item.Id + "-" + examQuestionOption.Id;
+                        <div class="col-12 my-1 mx-0 px-0 question alt">
+                            <div class="row col-12">
+                                <div class="col-2 px-0 question-left @className">
+                                    <label><input type="radio" name="Ansewer_@item.Id" onclick="setQuestionAnswer(@examQuestionOption.Id,@item.Id)" /> @examQuestionOption.OptionType )</label>
+                                </div>
+                                <div class="col-10 pr-0 question-right @className">
+                                    <label>@examQuestionOption.Text</label>
+                                </div>
+                            </div>
+
+                        </div>
+                        counter++;
+                    }
+
+                </div>
+
+            </div>
+
+        }
+    </div>
+
+    <div class="row col-12 justify-content-end">
+        <button id="btnEndExam" class="btn btn-success pr-5 btnSubmit">Sınavı Bitir</button>
+        <a id="btnGoBack" href="/UserHome/Index" class="btn btn-warning pr-5" style="display:none">Sınav Listesine Geri Dön</a>
+    </div>
+</form>
+
+
+
+@section Scripts{
+    <script src="~/js/site.js?@(DateTime.Now.Ticks)"></script>
+    <script src="~/js/user.js?@(DateTime.Now.Ticks)"></script>
+}

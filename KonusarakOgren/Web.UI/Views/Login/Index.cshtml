@@ -1,0 +1,50 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="~/css/login.css?@(DateTime.Now.Ticks)" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <form asp-action="index" asp-controller="login" method="post">
+            <div class="box">
+                <h1>Giriş</h1>
+                <div class="user">
+                    <i class="fas fa-user"></i>
+                    <input type="text"
+                           name="username"
+                           id="username"
+                           autocomplete="off"
+                           placeholder="Kullanıcı Adı" />
+                    <i class="fas fa-unlock-alt"></i>
+                    <input type="password"
+                           name="password"
+                           id="password"
+                           autocomplete="off"
+                           placeholder="Şifreniz" />
+                </div>
+                @*<p class="reset-password">Şifrenizi mi unuttunuz?</p>*@
+                <div class="login-btn">
+                    <button class="btn">Giriş</button>
+                    @*<p class="signup">Üye Değil Misin? <span onclick="GoToLink('create-user')"><a >Kayıt Ol</a></span></p>*@
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+<script>
+    function GoToLink(link) {
+        window.location = "/" + link;
+    }
+</script>

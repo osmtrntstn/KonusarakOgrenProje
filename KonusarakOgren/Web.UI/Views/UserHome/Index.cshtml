@@ -1,0 +1,48 @@
+﻿@model IEnumerable<Entities.Dtos.ExamDtos.ExamListDto>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<h3>Sınav Listesi</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Sınav Başlığı
+            </th>
+            <th>
+                Oluşturulma Tarihi
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr id="tr_@item.ExamId">
+                <td>
+                    @Html.DisplayFor(modelItem => item.ExamId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ExamTitle)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreatedDate)
+                </td>
+                <td id="td_@item.ExamId" data-exam="tdExam" data-id="@item.ExamId">
+
+                    @Html.ActionLink("Sınava Katıl", "JoinExam", new { item.ExamId })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@section Scripts{
+    <script src="~/js/user.js?@(DateTime.Now.Ticks)"></script>
+}

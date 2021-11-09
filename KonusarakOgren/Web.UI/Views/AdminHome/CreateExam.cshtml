@@ -1,0 +1,41 @@
+﻿@model Entities.Concrete.WiredText
+
+@{
+    ViewData["Title"] = "CreateExam";
+}
+@section styles{
+    <link href="~/css/adminHome.css?@(DateTime.Now.Ticks)" rel="stylesheet" />
+}
+<div class="row">
+    <h5 class="pr-3"><a href="/AdminHome/Index"><i class="fas fa-arrow-left"></i>Listeye Dön</a></h5>
+    <h2>@Model.Title</h2>
+
+</div>
+<div class="row justify-content-center subject">
+    <div style="margin:10px;align-items:center">
+        @if (String.IsNullOrEmpty(Model.Text))
+        {
+            <a href="@Model.TextUrl" target="_blank">Metin Yüklenemedi Metine Gitmek İçin Tıklayın <i class="fas fa-link"></i></a>
+        }
+        @Html.Raw(Model.Text)
+
+    </div>
+</div>
+<style>
+</style>
+   @**@
+<form asp-action="CreateExam" asp-controller="AdminHome"
+      data-ajax="true"
+      data-ajax-method="POST"
+      data-ajax-begin="formBegin"
+      data-ajax-success="formSuccess"
+      data-ajax-failure="formError">
+    <input name="WiredTextId" type="hidden" value="@Model.Id" />
+    @for (int i = 0; i < 4; i++)
+    {
+        @await Html.PartialAsync("_Question", i)
+    }
+    <div class="row col-12 justify-content-end">
+        <button class="btn btn-success pr-5 btnSubmit">Sınav Oluştur</button>
+    </div>
+</form>

@@ -1,0 +1,31 @@
+﻿@model List<Entities.Dtos.WiredDtos.WiredDto>
+
+@{
+    ViewData["Title"] = "Index";
+}
+@section styles{ 
+    <link href="~/css/adminHome.css?@(DateTime.Now.Ticks)" rel="stylesheet" />
+}
+<div class="container-page">
+    <div class="row col-12 justify-content-center">
+        <ul class="nav-item subject col-12">
+
+            @foreach (var item in Model)
+            {
+                <li class="nav-link" onclick="goToCreateExam(@item.WiredTextId)">
+                    <label>@item.Title <i id="i_@item.WiredTextId" class="fas fa-arrow-right"></i></label>
+                    @*<a href="/AdminHome/CreateExam/@item.WiredTextId">@item.Title <i id="i_@item.WiredTextId" class="fas fa-arrow-right"></i></a>*@
+                </li>
+
+            }
+        </ul>
+
+
+
+    </div>
+</div>
+
+
+@section Scripts{ 
+    <script src="~/js/adminHome.js?@(DateTime.Now.Ticks)"></script>
+}

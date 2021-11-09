@@ -1,0 +1,82 @@
+﻿@model int
+@{ 
+    int counter = Model;
+}
+<div class="row col-12 pt-1 question-line m-1">
+    <div class="row col-12">
+        <div class="col-12 p-1 question" >
+            <div class="input-group">
+                <label style="width:10%">Soru @(counter+1) )</label>
+                <input name="Questions[@counter].QuestionText" class="form-control input-sm" type="text" style="width:90%" />
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="row col-12 ">
+        <div class="col-6 p-1 question">
+            <div class="row col-12">
+                <div class="col-2">
+                    <label>A)</label>
+                </div>
+                <div class="col-10">
+                    <input name="Questions[@counter].OuestionOptions[0].Text" class="form-control input-sm" type="text" />
+                    <input name="Questions[@counter].OuestionOptions[0].Type" type="hidden" value="A" />
+                </div>
+            </div>
+
+        </div>
+        <div class="col-6 p-1 question">
+            <div class="row col-12">
+                <div class="col-2">
+                    <label>B)</label>
+                </div>
+                <div class="col-10">
+                    <input name="Questions[@counter].OuestionOptions[1].Text" class="form-control input-sm" type="text" />
+                    <input name="Questions[@counter].OuestionOptions[1].Type" type="hidden" value="B" />
+
+                </div>
+            </div>
+        </div>
+        <div class="col-6 p-1 question">
+            <div class="row col-12">
+                <div class="col-2">
+                    <label>C)</label>
+                </div>
+                <div class="col-10">
+                    <input name="Questions[@counter].OuestionOptions[2].Text" class="form-control input-sm" type="text" />
+                    <input name="Questions[@counter].OuestionOptions[2].Type" type="hidden" value="C" />
+
+                </div>
+            </div>
+        </div>
+        <div class="col-6 p-1 question" >
+            <div class="row col-12">
+                <div class="col-2">
+                    <label>D)</label>
+                </div>
+                <div class="col-10">
+                    <input name="Questions[@counter].OuestionOptions[3].Text" class="form-control input-sm" type="text" />
+                    <input name="Questions[@counter].OuestionOptions[3].Type" type="hidden" value="D" />
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row col-12 justify-content-center">
+        <div class="col-8 p-1 question" style="text-align: center">
+
+            <select name="Questions[@counter].QuestionAnsver" class="form-control">
+                <option value="-1">Doğru Cevap Seç</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+            </select>
+
+        </div>
+    </div>
+</div>
