@@ -35,7 +35,7 @@ namespace Web.UI.Controllers
             if (sessionModel == null) return RedirectToAction("Index", "Login");
             if (sessionModel.UserTypeCode != "us") return RedirectToAction("Index", "AdminHome");
             var chectUserExam = _userExamService.CheckUserExam(id,sessionModel.UserId);
-            if (!chectUserExam.Status)
+            if (chectUserExam.Status)
             {
                 return View("Error");
             }
@@ -49,7 +49,7 @@ namespace Web.UI.Controllers
             if (sessionModel == null) return RedirectToAction("Index", "Login");
             if (sessionModel.UserTypeCode != "us") return RedirectToAction("Index", "AdminHome");
             var chectUserExam = _userExamService.CheckUserExam(userExam.ExamId,sessionModel.UserId);
-            if (!chectUserExam.Status)
+            if (chectUserExam.Status)
             {
                 Dto dto = new Dto
                 {
