@@ -10,7 +10,7 @@ namespace Business.Abstract
 {
     public interface IUserExamService
     {
-        public CheckUserExamDto CheckUserExam(int id);
+        public CheckUserExamDto CheckUserExam(int id,int userId);
         public List<JoinExamResponseDto> SaveUserExam(UserExam userExam);
     }
 }

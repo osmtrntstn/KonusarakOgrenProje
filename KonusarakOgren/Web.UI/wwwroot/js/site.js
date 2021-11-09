@@ -27,6 +27,7 @@ function formError(response) {
 function formSuccess(response) {
     try {
         toastMessage(response.statusCode, response.responseMessage);
+
         window.location = "/AdminHome/Index";
     } catch (e) {
         toastMessage("error", "Sonuç Değeri Okunamadı");

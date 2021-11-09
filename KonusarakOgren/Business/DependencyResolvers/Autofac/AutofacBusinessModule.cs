@@ -39,6 +39,8 @@ namespace Business.DependencyResolvers.Autofac
             builder.RegisterType<WiredTextDal>().As<IWiredTextDal>();
             builder.RegisterType<WiredTextService>().As<IWiredTextService>();
 
+            builder.RegisterType<PasswordCodeDal>().As<IPasswordCodeDal>();
+            builder.RegisterType<PasswordCodeService>().As<IPasswordCodeService>();
             var assembly = System.Reflection.Assembly.GetExecutingAssembly();
 
             builder.RegisterAssemblyTypes(assembly).AsImplementedInterfaces()

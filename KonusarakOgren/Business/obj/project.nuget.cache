@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "APcgKFqhIiBBaeBxCpWpjWuPUEt81+yP9E9PkQQ8ROVGbhCJ9SJdsqZhMhZFaZYwd5jWoh2KuYqTXGq6dFsOLg==",
+  "dgSpecHash": "eHZzaMebX4KmNKeIy7w7lqtpLqw6LuGw2WHCZHkxPNTeQrFyBoS+P1vaVY04uPBC4gOs1lmdNOpn7Annws4QaA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\Business\\Business.csproj",
+  "projectFilePath": "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\Business\\Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\osmtr\\.nuget\\packages\\autofac\\6.2.0\\autofac.6.2.0.nupkg.sha512",
     "C:\\Users\\osmtr\\.nuget\\packages\\autofac.extras.dynamicproxy\\6.0.0\\autofac.extras.dynamicproxy.6.0.0.nupkg.sha512",

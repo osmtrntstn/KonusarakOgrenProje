@@ -5539,11 +5539,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\Core\\Core.csproj",
+      "projectPath": "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\Core\\Core.csproj",
       "packagesPath": "C:\\Users\\osmtr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\Core\\obj\\",
+      "outputPath": "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\osmtr\\AppData\\Roaming\\NuGet\\NuGet.Config",

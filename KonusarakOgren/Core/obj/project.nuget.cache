@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/xRw48rLFYp+Dx6O7jVCZcI/sJMKbpkQzg2BxzH5ceSrboLKGY6FNsOYZ8npOEfDtiMIrqpP0pJP4z7O3hlj3g==",
+  "dgSpecHash": "76ZOb0+eKq918yHZL3mOh+g2OQ11n4IRGNHvvEY9KG2jXJzetlCVHEWLeXo4Gyfwwx75k5mYXC96f4F8zsjXww==",
   "success": true,
-  "projectFilePath": "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\Core\\Core.csproj",
+  "projectFilePath": "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\Core\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\osmtr\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\osmtr\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.11\\microsoft.entityframeworkcore.5.0.11.nupkg.sha512",

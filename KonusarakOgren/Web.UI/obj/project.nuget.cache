@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "72Dqk/OePDXV+LFBoxKtA2NfFcsZwyzyW/Qxa7kgKyYFCroKvqzJJLBocsyk57zFOIh5Y1K3nLxS73q0sRFAjw==",
+  "dgSpecHash": "Yhvol9U01q9GA/aw2c0gnOiZKz4HRlU93ZJHnaYjTREknTBtvkajI1kJplko9Muho5PaNhEzQQuCRKsUwCTO3Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\Web.UI\\Web.UI.csproj",
+  "projectFilePath": "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\Web.UI\\Web.UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\osmtr\\.nuget\\packages\\autofac\\6.2.0\\autofac.6.2.0.nupkg.sha512",
     "C:\\Users\\osmtr\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",

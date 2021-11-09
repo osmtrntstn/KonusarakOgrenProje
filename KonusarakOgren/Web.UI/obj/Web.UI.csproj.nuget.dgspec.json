@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\Web.UI\\Web.UI.csproj": {}
+    "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\Web.UI\\Web.UI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\Business\\Business.csproj": {
+    "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\Business\\Business.csproj",
+        "projectUniqueName": "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\Business\\Business.csproj",
+        "projectPath": "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\Business\\Business.csproj",
         "packagesPath": "C:\\Users\\osmtr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\Business\\obj\\",
+        "outputPath": "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\osmtr\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\DataAccess\\DataAccess.csproj"
               }
             }
           }
@@ -92,14 +92,14 @@
         }
       }
     },
-    "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\Core\\Core.csproj": {
+    "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\osmtr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\Core\\obj\\",
+        "outputPath": "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\osmtr\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -156,14 +156,14 @@
         }
       }
     },
-    "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\DataAccess\\DataAccess.csproj",
+        "projectPath": "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\osmtr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\osmtr\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -180,8 +180,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\Entities\\Entities.csproj"
+              "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\Entities\\Entities.csproj"
               }
             }
           }
@@ -240,14 +240,14 @@
         }
       }
     },
-    "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\Entities\\Entities.csproj": {
+    "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\osmtr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\osmtr\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -264,8 +264,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\Core\\Core.csproj"
+              "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\Core\\Core.csproj"
               }
             }
           }
@@ -298,14 +298,14 @@
         }
       }
     },
-    "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\Web.UI\\Web.UI.csproj": {
+    "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\Web.UI\\Web.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\Web.UI\\Web.UI.csproj",
+        "projectUniqueName": "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\Web.UI\\Web.UI.csproj",
         "projectName": "Web.UI",
-        "projectPath": "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\Web.UI\\Web.UI.csproj",
+        "projectPath": "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\Web.UI\\Web.UI.csproj",
         "packagesPath": "C:\\Users\\osmtr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\Web.UI\\obj\\",
+        "outputPath": "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\Web.UI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\osmtr\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -322,8 +322,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\Business\\Business.csproj": {
-                "projectPath": "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\Business\\Business.csproj"
+              "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\Business\\Business.csproj": {
+                "projectPath": "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\Business\\Business.csproj"
               }
             }
           }

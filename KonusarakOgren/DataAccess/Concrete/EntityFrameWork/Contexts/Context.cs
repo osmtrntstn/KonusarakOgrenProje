@@ -48,6 +48,7 @@ namespace DataAccess.Concrete.EntityFrameWork.Contexts
         public DbSet<UserExam> UserExams { get; set; }
         public DbSet<UserExamOption> UserExamOptions { get; set; }
         public DbSet<WiredText> WiredTexts { get; set; }
+        public DbSet<PasswordCode> PasswordCodes { get; set; }
 
 
        

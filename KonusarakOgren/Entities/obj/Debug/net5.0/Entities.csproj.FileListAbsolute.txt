@@ -12,3 +12,17 @@ C:\Users\osmtr\source\repos\KonusarakOgren\Entities\obj\Debug\net5.0\Entities.cs
 C:\Users\osmtr\source\repos\KonusarakOgren\Entities\obj\Debug\net5.0\Entities.dll
 C:\Users\osmtr\source\repos\KonusarakOgren\Entities\obj\Debug\net5.0\ref\Entities.dll
 C:\Users\osmtr\source\repos\KonusarakOgren\Entities\obj\Debug\net5.0\Entities.pdb
+C:\Users\osmtr\Documents\GitHub\KonusarakOgrenProje\KonusarakOgren\Entities\bin\Debug\net5.0\Entities.deps.json
+C:\Users\osmtr\Documents\GitHub\KonusarakOgrenProje\KonusarakOgren\Entities\bin\Debug\net5.0\Entities.dll
+C:\Users\osmtr\Documents\GitHub\KonusarakOgrenProje\KonusarakOgren\Entities\bin\Debug\net5.0\ref\Entities.dll
+C:\Users\osmtr\Documents\GitHub\KonusarakOgrenProje\KonusarakOgren\Entities\bin\Debug\net5.0\Entities.pdb
+C:\Users\osmtr\Documents\GitHub\KonusarakOgrenProje\KonusarakOgren\Entities\bin\Debug\net5.0\Core.dll
+C:\Users\osmtr\Documents\GitHub\KonusarakOgrenProje\KonusarakOgren\Entities\bin\Debug\net5.0\Core.pdb
+C:\Users\osmtr\Documents\GitHub\KonusarakOgrenProje\KonusarakOgren\Entities\obj\Debug\net5.0\Entities.csproj.AssemblyReference.cache
+C:\Users\osmtr\Documents\GitHub\KonusarakOgrenProje\KonusarakOgren\Entities\obj\Debug\net5.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\osmtr\Documents\GitHub\KonusarakOgrenProje\KonusarakOgren\Entities\obj\Debug\net5.0\Entities.AssemblyInfoInputs.cache
+C:\Users\osmtr\Documents\GitHub\KonusarakOgrenProje\KonusarakOgren\Entities\obj\Debug\net5.0\Entities.AssemblyInfo.cs
+C:\Users\osmtr\Documents\GitHub\KonusarakOgrenProje\KonusarakOgren\Entities\obj\Debug\net5.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\osmtr\Documents\GitHub\KonusarakOgrenProje\KonusarakOgren\Entities\obj\Debug\net5.0\Entities.dll
+C:\Users\osmtr\Documents\GitHub\KonusarakOgrenProje\KonusarakOgren\Entities\obj\Debug\net5.0\ref\Entities.dll
+C:\Users\osmtr\Documents\GitHub\KonusarakOgrenProje\KonusarakOgren\Entities\obj\Debug\net5.0\Entities.pdb

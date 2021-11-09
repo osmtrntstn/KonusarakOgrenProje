@@ -26,10 +26,10 @@ namespace Business.Concrete
             _userExamOptionDal = userExamOptionDal;
             _examQuestionDal = examQuestionDal;
         }
-        public CheckUserExamDto CheckUserExam(int id)
+        public CheckUserExamDto CheckUserExam(int id,int userId)
         {
             CheckUserExamDto checkUserExamDto = new CheckUserExamDto();
-            var userExam = _userExamDal.Table.Where(x=>x.ExamId == id).FirstOrDefault();
+            var userExam = _userExamDal.Table.Where(x=>x.ExamId == id && x.UserId == userId).FirstOrDefault();
             if (userExam == null)
             {
                 checkUserExamDto.Status = false;

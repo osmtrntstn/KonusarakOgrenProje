@@ -117,6 +117,37 @@ namespace DataAccess.Migrations
                     b.ToTable("ExamQuestionOptions");
                 });
 
+            modelBuilder.Entity("Entities.Concrete.PasswordCode", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Code")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime?>("DeletedDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("PasswordCodes");
+                });
+
             modelBuilder.Entity("Entities.Concrete.User", b =>
                 {
                     b.Property<int>("Id")
@@ -338,6 +369,17 @@ namespace DataAccess.Migrations
                     b.Navigation("ExamQuestion");
                 });
 
+            modelBuilder.Entity("Entities.Concrete.PasswordCode", b =>
+                {
+                    b.HasOne("Entities.Concrete.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Entities.Concrete.User", b =>
                 {
                     b.HasOne("Entities.Concrete.UserType", "UserType")
@@ -383,7 +425,7 @@ namespace DataAccess.Migrations
                         .IsRequired();
 
                     b.HasOne("Entities.Concrete.UserExam", "UserExam")
-                        .WithMany()
+                        .WithMany("UserExamOptions")
                         .HasForeignKey("UserExamId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -403,6 +445,11 @@ namespace DataAccess.Migrations
             modelBuilder.Entity("Entities.Concrete.ExamQuestion", b =>
                 {
                     b.Navigation("ExamQuestionOptions");
+                });
+
+            modelBuilder.Entity("Entities.Concrete.UserExam", b =>
+                {
+                    b.Navigation("UserExamOptions");
                 });
 #pragma warning restore 612, 618
         }

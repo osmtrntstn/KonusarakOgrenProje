@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GFFaj3mieimhQNVVkPdyPv7U6fZruA1+vstSBHoM6igE9BCsnY0k7w4k6ImFs7LfL0LQFczkyKIPXxzZoxCaOw==",
+  "dgSpecHash": "TyQOntHvK5MYjeOjgr9SV0fVsZTGSEEOxIpAiTKvMdtCd/EASd7UK8ZiAlk3Vh7CP/SMF0b0CtHBER6eMjsw5g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\DataAccess\\DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\osmtr\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\osmtr\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

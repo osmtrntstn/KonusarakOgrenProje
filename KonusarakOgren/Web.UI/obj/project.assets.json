@@ -8694,11 +8694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\Web.UI\\Web.UI.csproj",
+      "projectUniqueName": "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\Web.UI\\Web.UI.csproj",
       "projectName": "Web.UI",
-      "projectPath": "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\Web.UI\\Web.UI.csproj",
+      "projectPath": "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\Web.UI\\Web.UI.csproj",
       "packagesPath": "C:\\Users\\osmtr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\Web.UI\\obj\\",
+      "outputPath": "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\Web.UI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\osmtr\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8715,8 +8715,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\Business\\Business.csproj": {
-              "projectPath": "C:\\Users\\osmtr\\source\\repos\\KonusarakOgren\\Business\\Business.csproj"
+            "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\Business\\Business.csproj": {
+              "projectPath": "C:\\Users\\osmtr\\Documents\\GitHub\\KonusarakOgrenProje\\KonusarakOgren\\Business\\Business.csproj"
             }
           }
         }
