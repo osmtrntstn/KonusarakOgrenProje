@@ -39,6 +39,31 @@ namespace Web.UI.Controllers
 
             return View(wiredTextList);
         }
+        [HttpPost]
+        public IActionResult UpdateWiredText(int id, string text)
+        {
+            if (sessionModel == null) return Unauthorized();
+            if (sessionModel.UserTypeCode != "ad") return Unauthorized();
+
+            if (string.IsNullOrEmpty(text))
+            {
+                return BadRequest(new Dto
+                {
+                    StatusCode = "error",
+                    ResponseMessage = "Text Alanı Boş Geçilemez",
+                    Status = false
+                });
+            }
+            var response = _wiredTextService.UpdateWiredText(id,text);
+            if (response.Status)
+            {
+                return Ok(response);
+            }
+            else
+            {
+                return BadRequest(response);
+            }
+        }
         public IActionResult ExamList()
         {
             if (sessionModel == null) return RedirectToAction("Index", "Login");
@@ -80,11 +105,11 @@ namespace Web.UI.Controllers
                 if (sessionModel == null) return Unauthorized();
                 if (sessionModel.UserTypeCode != "ad") return Unauthorized();
 
-               var response =  _examService.DeleteExam(id);
+                var response = _examService.DeleteExam(id);
                 if (response.Status)
                 {
 
-                    return Ok(new { response = response,target = id });
+                    return Ok(new { response = response, target = id });
                 }
                 else
                 {

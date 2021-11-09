@@ -1,4 +1,5 @@
-﻿using Entities.Concrete;
+﻿using Core.Entities.Concrete;
+using Entities.Concrete;
 using Entities.Dtos.WiredDtos;
 using System;
 using System.Collections.Generic;
@@ -12,6 +13,7 @@ namespace Business.Abstract
     {
         public List<WiredDto> GetWiredTexts();
         public WiredText GetWiredText(int id);
+        public Dto UpdateWiredText(int id,string text);
 
     }
 }

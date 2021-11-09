@@ -12,18 +12,29 @@
 
 </div>
 <div class="row justify-content-center subject">
-    <div style="margin:10px;align-items:center">
-        @if (String.IsNullOrEmpty(Model.Text))
-        {
-            <a href="@Model.TextUrl" target="_blank">Metin Yüklenemedi Metine Gitmek İçin Tıklayın <i class="fas fa-link"></i></a>
-        }
-        @Html.Raw(Model.Text)
+    <div class="col-12" style="margin:10px;align-items:center">
+        <button class="btn btn-sm btn-success" id="btnUpdWired_@Model.Id" onclick="GetUpdateWired(@Model.Id)">Metni Düzenle</button> 
+
+        <a href="@Model.TextUrl" id="wiredLink_@Model.Id" target="_blank" style="display:none">Metine Gitmek İçin Tıklayın <i class="fas fa-link"></i></a>
+        <br />
+        <div class="row col-12" id="dvWiredText_@Model.Id" style="display:none">
+
+            <textarea id="WiredText_@Model.Id" rows="10" style="width:100%;">@Html.Raw(Model.Text)</textarea>
+
+        </div>
+        <button class="btn btn-sm btn-success" id="btnWired_@Model.Id" style="display:none" onclick="UpdateWiredText(@Model.Id)">Metni Güncelle</button> 
+
+        <div id="dvWired_@Model.Id">
+            @Html.Raw(Model.Text)
+        </div>
+
+
 
     </div>
 </div>
 <style>
 </style>
-   @**@
+@**@
 <form asp-action="CreateExam" asp-controller="AdminHome"
       data-ajax="true"
       data-ajax-method="POST"
@@ -39,3 +50,41 @@
         <button class="btn btn-success pr-5 btnSubmit">Sınav Oluştur</button>
     </div>
 </form>
+
+
+<script>
+    function UpdateWiredText(id) {
+
+        $.ajax({
+            url: "/AdminHome/UpdateWiredText",
+            type: "post",
+            dataType: "json",
+            data: { id: id, text: $("#WiredText_" + id).val() },
+            success: function (response) {
+                $("#wiredLink_" + id).css("display", "none");
+                $("#dvWiredText_" + id).css("display", "none");
+                $("#btnWired_" + id).css("display", "none");
+
+                $("#dvWired_" + id).css("display", "block");
+                $("#dvWired_" + id).css("display", "block");
+                $("#btnUpdWired_" + id).css("display", "block");
+
+                $("#dvWired_" + id).html($("#WiredText_" + id).val());
+
+                toastMessage(response.statusCode, response.responseMessage);
+            }
+            , error: function (jqXHR, exception) {
+                ajaxError(jqXHR);
+            }
+        })
+    }
+    function GetUpdateWired(id) {
+        $("#wiredLink_" + id).css("display","block");
+        $("#dvWiredText_" + id).css("display","block");
+        $("#btnWired_" + id).css("display", "block");
+
+        $("#dvWired_" + id).css("display","none");
+        $("#dvWired_" + id).css("display","none");
+        $("#btnUpdWired_" + id).css("display","none");
+    }
+</script>

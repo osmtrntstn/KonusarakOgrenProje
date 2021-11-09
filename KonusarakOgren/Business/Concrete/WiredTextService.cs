@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Core.Entities.Concrete;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using Entities.Dtos.WiredDtos;
@@ -212,6 +213,28 @@ namespace Business.Concrete
             }
 
             return titleList;
+        }
+
+        public Dto UpdateWiredText(int id, string text)
+        {
+            var wiredText = _wiredTextDal.GetById(id);
+            if (wiredText == null)
+            {
+                return new Dto
+                {
+                    Status = false,
+                    StatusCode = "error",
+                    ResponseMessage = "WiredText Sistemde Bulunamadı"
+                };
+            }
+            wiredText.Text = text;
+            _wiredTextDal.Update(wiredText);
+            return new Dto
+            {
+                Status = true,
+                StatusCode = "success",
+                ResponseMessage = "WiredText Güncellendi"
+            };
         }
     }
 }
